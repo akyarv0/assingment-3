@@ -15,7 +15,7 @@ const Products = ({ productList }) => {
         Primary
       </Button>
       {toggle && <h1>Hello</h1>}
-      <FormPage />
+
       {/* {productList.map((product) => (
         <Card key={product.id} style={{ width: "18rem" }}>
           <Card.Img variant="top" src="product.image" alt={product.image} />
