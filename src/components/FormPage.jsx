@@ -1,12 +1,17 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { useState } from "react";
 
 function FormPage() {
+    const [enteredProducts, setEnteredProducts] = useState({
+        name: '',
+        price: 0,
+        quantity: 0,
+        image: ''
+    }) // [products]
 
-
-    
   return (
-    <Form onSubmit={handleForm}>
+    <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Product Name</Form.Label>
         <Form.Control type="text" placeholder="Enter product name..." />
@@ -23,7 +28,7 @@ function FormPage() {
         <Form.Label>Product Image</Form.Label>
         <Form.Control type="text" placeholder="Enter product image..." />
       </Form.Group>
-      <Button variant="success" type="submit" onClick={handleForm}>
+      <Button variant="success" type="submit">
         Add to Cart
       </Button>
     </Form>

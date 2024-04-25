@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Footer() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary fixed-bottom">
       <Container>
         <Navbar.Brand href="#">Footer</Navbar.Brand>
       </Container>

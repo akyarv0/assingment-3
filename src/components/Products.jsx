@@ -11,10 +11,14 @@ const Products = ({ productList }) => {
   };
   return (
     <Container>
-      <Button variant="primary" onClick={handleProductList}>
-        Primary
+      <Button
+        variant={toggle ? "danger" : "warning"}
+        className="mt-4"
+        onClick={handleProductList}
+      >
+        {toggle ? "Hide Form" : "Show Form"}
       </Button>
-      {toggle && <h1>Hello</h1>}
+      {toggle && <FormPage />}
 
       {/* {productList.map((product) => (
         <Card key={product.id} style={{ width: "18rem" }}>
